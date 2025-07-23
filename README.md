@@ -32,13 +32,13 @@ graph TD;
         D["🖥️ Hệ Điều Hành (OS)"];
     end
 
-    A -- Gửi Lệnh --> B;
-    C -- "1. Kiểm tra email định kỳ (IMAP)" --> B;
-    B -- "2. Có email mới chứa lệnh" --> C;
-    C -- "3. Phân tích và thực thi lệnh" --> D;
-    D -- "4. Trả kết quả (vd: tạo file ảnh)" --> C;
-    C -- "5. Gửi email chứa kết quả (SMTP)" --> B;
-    B -- "6. Chuyển tiếp email kết quả" --> I;
+    A -- "Gửi Lệnh" --> B;
+    C -- "(1) Kiểm tra email định kỳ (IMAP)" --> B;
+    B -- "(2) Có email mới chứa lệnh" --> C;
+    C -- "(3) Phân tích và thực thi lệnh" --> D;
+    D -- "(4) Trả kết quả (vd: tạo file ảnh)" --> C;
+    C -- "(5) Gửi email chứa kết quả (SMTP)" --> B;
+    B -- "(6) Chuyển tiếp email kết quả" --> I;
 ```
 ## ✨ Các câu lệnh hỗ-trợ (Supported Commands)
 
