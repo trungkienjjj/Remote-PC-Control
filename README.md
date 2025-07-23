@@ -6,8 +6,6 @@
 
 ## 🎬 Video Demo
 
-*(GHI CHÚ: Đây là phần quan trọng nhất! Hãy dán link video demo/thuyết trình của bạn vào đây.)*
-
 **Link video:** [https://www.youtube.com/watch?v=rWUEGhtDJEY]
 
 ---
