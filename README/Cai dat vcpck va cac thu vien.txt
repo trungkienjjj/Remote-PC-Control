@@ -1,0 +1,26 @@
+1. Cài đặt vcpkg
+1.1 Tải vcpkg từ GitHub:
+git clone https://github.com/microsoft/vcpkg.git
+cd vcpkg
+
+1.2 Xây dựng vcpkg
+./bootstrap-vcpkg.bat
+
+2. Thêm vcpkg vào PATH
+Để sử dụng vcpkg từ bất kỳ thư mục nào:
+
+Mở System Properties > Advanced > Environment Variables.
+Thêm đường dẫn vcpkg vào biến PATH.
+
+3. Cài đặt các thư viện cần thiết
+vcpkg install opencv:x64-windows
+vcpkg install nlohmann-json:x64-windows
+vcpkg install protobuf:x64-windows
+
+4. Thêm vào Visual Studio
+Mở Visual studio, vào Project Settings > C++ > General > Additional Include Directories.
+Thêm đường dẫn vcpkg\installed\x64-windows\include.
+Tương tự, thêm vào Linker > Additional Library Directories: vcpkg\installed\x64-windows\lib.
+
+5. Kiểm tra các thư viện đã được cài
+Mở cmd > vcpkg list

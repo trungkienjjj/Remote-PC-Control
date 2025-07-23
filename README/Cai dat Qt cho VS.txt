@@ -1,0 +1,30 @@
+Bước 1: Tải và cài đặt Qt
+- Tải Qt Online Installer từ trang chính thức. Link: https://www.qt.io/download-open-source.
+- Chạy file cài đặt và chọn:
+  + Qt phiên bản phù hợp với compiler (Visual Studio 2019 hoặc 2022).
+  + Chọn mục "MSVC 64-bit" 
+  + Cài đặt và ghi nhớ đường dẫn thư mục (ví dụ: C:\Qt\6.x.x\msvc2019_64).
+
+Bước 2: Tải và cài đặt Qt VS Tools
+- Mở Visual Studio.
+- Vào Extensions > Manage Extensions.
+- Tìm kiếm Qt Visual Studio Tools và cài đặt.
+- Khởi động lại Visual Studio.
+
+Bước 3: Cấu hình Qt trong Visual Studio
+- Trong Visual Studio, mở Qt VS Tools từ menu trên cùng.
+- Chọn Qt Versions > Add.
+- Trỏ đến thư mục cài đặt Qt (ví dụ: C:\Qt\6.x.x\msvc2019_64\bin\qmake.exe).
+- Đặt tên phiên bản (ví dụ: Qt6_MSVC2019_64).
+
+Bước 4: Tạo dự án Qt trong Visual Studio
+- Vào File > New > Project.
+- Tìm mẫu dự án Qt Widgets Application.
+- Chọn Qt Version đã cấu hình trong bước 3.
+- Cấu hình và tạo dự án.
+
+Bước 5: Đặt các file vào dự án
+- Đặt các file .h vào thư mục Header Files
+- Đặt các file .cpp vào thư mục Source Files
+
+Bước 6: Chạy chương trình

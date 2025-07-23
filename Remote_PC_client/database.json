@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "commands": [],
+            "user_mail": "admin"
+        },
+        {
+            "commands": [
+                "List Service"
+            ],
+            "user_mail": "nttkien080925@gmail.com"
+        },
+        {
+            "commands": [
+                "Shutdown PC",
+                "Register",
+                "Capture Shot"
+            ],
+            "user_mail": "animeshounnentop@gmail.com"
+        },
+        {
+            "commands": [
+                "Screen Shot"
+            ],
+            "user_mail": "animetieusu@gmail.com"
+        }
+    ]
+}
