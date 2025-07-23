@@ -14,7 +14,7 @@
 
 Dự án này mô phỏng một kỹ thuật kiểm soát máy tính từ xa ở mức độ cơ bản. Một chương trình client chạy ẩn trên máy tính mục tiêu sẽ liên tục kiểm tra một hòm thư email được chỉ định. Khi có email mới chứa câu lệnh hợp lệ được gửi đến, chương trình sẽ thực thi câu lệnh đó và gửi kết quả (nếu có) về lại email của người điều khiển.
 
-### Sơ đồ kiến trúc
+
 
 ### Sơ đồ kiến trúc
 
@@ -41,7 +41,6 @@ graph TD;
     D -- "4. Trả kết quả (vd: tạo file ảnh)" --> C;
     C -- "5. Gửi email chứa kết quả (SMTP)" --> B;
     B -- "6. Chuyển tiếp email kết quả" --> I;
----
 
 ## ✨ Các câu lệnh hỗ-trợ (Supported Commands)
 
