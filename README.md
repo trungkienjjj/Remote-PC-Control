@@ -16,6 +16,9 @@ Dự án này mô phỏng một kỹ thuật kiểm soát máy tính từ xa ở
 
 ### Sơ đồ kiến trúc
 
+### Sơ đồ kiến trúc
+
+```mermaid
 graph TD;
     subgraph "Người Điều Khiển (Controller)";
         A["📱 Gửi email chứa lệnh (vd: 'SCREENSHOT')"];
@@ -38,38 +41,21 @@ graph TD;
     D -- "4. Trả kết quả (vd: tạo file ảnh)" --> C;
     C -- "5. Gửi email chứa kết quả (SMTP)" --> B;
     B -- "6. Chuyển tiếp email kết quả" --> I;
-
 ---
 
-## ✨ Các câu lệnh hỗ trợ (Supported Commands)
+## ✨ Các câu lệnh hỗ-trợ (Supported Commands)
 
-Chương trình có khả năng thực thi các câu lệnh sau được gửi từ email:
+Chương trình có khả năng thực-thi các câu lệnh sau được gửi từ email:
 
-Chào bạn, tôi đã đọc lại file báo cáo đồ án Mạng máy tính (MMT_Project.pdf) của bạn để lấy danh sách đầy đủ các câu lệnh mà chương trình hỗ trợ.
-
-Dưới đây là nội dung hoàn chỉnh cho mục "Các câu lệnh hỗ trợ" mà bạn có thể sao chép và dán vào file README.md của mình.
-
-✨ Các câu lệnh hỗ trợ (Supported Commands)
-Chương trình có khả năng thực thi các câu lệnh sau được gửi từ email:
-
-SCREENSHOT: Chụp lại toàn bộ màn hình và gửi file ảnh về email.
-
-KEYLOG [start/stop/dump]:
-
-start: Bắt đầu ghi lại các phím được bấm.
-
-stop: Dừng việc ghi phím.
-
-dump: Gửi file log chứa các phím đã ghi được về email.
-
-PROCESSLIST: Lấy danh sách các tiến trình đang chạy và gửi về email.
-
-APPSTART: Lấy danh sách các ứng dụng đang chạy và gửi về email.
-
-SHUTDOWN: Ra lệnh cho máy tính tự động tắt nguồn.
-
-QUIT: Ra lệnh cho chương trình client tự tắt.
-
+* **`SCREENSHOT`**: Chụp lại toàn bộ màn hình và gửi file ảnh về email.
+* **`KEYLOG [start/stop/dump]`**:
+    * `start`: Bắt đầu ghi lại các phím được bấm.
+    * `stop`: Dừng việc ghi phím.
+    * `dump`: Gửi file log chứa các phím đã ghi được về email.
+* **`PROCESSLIST`**: Lấy danh sách các tiến-trình đang chạy và gửi về email.
+* **`APPSTART`**: Lấy danh sách các ứng dụng đang chạy và gửi về email.
+* **`SHUTDOWN`**: Ra lệnh cho máy tính tự động tắt nguồn.
+* **`QUIT`**: Ra lệnh cho chương trình client tự tắt.
 ---
 
 ## 🛠️ Công nghệ sử dụng (Tech Stack)
@@ -95,9 +81,9 @@ QUIT: Ra lệnh cho chương trình client tự tắt.
     ```
 2.  **Cài đặt các thư viện phụ thuộc.**
 3.  **Cấu hình thông tin nhạy cảm:**
-    * Tạo một file `credentials.json` theo mẫu.
+    * Tạo một file `mailapi.json` theo mẫu.
     * Điền thông tin email và mật khẩu ứng dụng vào file này.
-    * **Lưu ý:** File `credentials.json` đã được thêm vào `.gitignore` và sẽ không được đưa lên repository.
+    * **Lưu ý:** File `.json` đã được thêm vào `.gitignore` và sẽ không được đưa lên repository.
 4.  **Biên dịch và chạy chương trình.**
 
 ---
