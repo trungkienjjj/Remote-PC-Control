@@ -39,7 +39,7 @@ graph TD;
     D -- "4. Trả kết quả (vd: tạo file ảnh)" --> C;
     C -- "5. Gửi email chứa kết quả (SMTP)" --> B;
     B -- "6. Chuyển tiếp email kết quả" --> I;
----
+```
 ## ✨ Các câu lệnh hỗ-trợ (Supported Commands)
 
 Chương trình có khả năng thực-thi các câu lệnh sau được gửi từ email:
